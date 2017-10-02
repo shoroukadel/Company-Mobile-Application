@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/project"
+
+            android:icon="?attr/actionModeSelectAllDrawable"
+
+            android:title="Our Projects" />
+
+
+        <item
+            android:id="@+id/newproject"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="New project" />
+        <item
+            android:id="@+id/joboffers"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Job Offers" />
+        <item
+            android:id="@+id/employee"
+            android:icon="?android:attr/listChoiceIndicatorSingle"
+            android:title="Employees" />
+        <item android:title="options"
+
+            >
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@mipmap/bac33"
+                    android:title="Home" />
+            </menu>
+        </item>
+    </group>
+
+
+
+</menu>
