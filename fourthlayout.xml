@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/p1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/p1">
+
+            <ImageView
+                app:srcCompat="@drawable/tt"
+                android:id="@+id/imageView2"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/listed"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:text="Our Team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:textSize="28dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/textView14"
+                android:layout_marginStart="13dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp" />
+
+            <ListView
+                android:background="@color/p1"
+                android:id="@+id/listed"
+                android:layout_marginTop="13dp"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:layout_below="@+id/textView14"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

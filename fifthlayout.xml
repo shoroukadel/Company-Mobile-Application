@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="600dp"
+                    app:srcCompat="@drawable/newb"
+                    android:id="@+id/imageView4"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:text="Teamwork is the core essence of TMS line.
+ The qualified and well trained team at the company is able to execute even the most difficult of the tasks with great ease."
+                android:layout_width="600dp"
+                    android:textColor="@color/gray4"
+                    android:textStyle="italic"
+                    android:textSize="25dp"
+                    android:background="@drawable/rect"
+                    android:layout_below="@+id/Employee"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:text="Our Team"
+                    android:layout_width="400dp"
+                    android:layout_below="@+id/textView9"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray4"
+                    android:gravity="center"
+                    android:textSize="28dp"
+                    android:background="@color/gray2"
+                    android:id="@+id/textView14" />
+
+                <TextView
+                    android:text="Employees"
+                    android:layout_width="match_parent"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray4"
+                    android:id="@+id/Employee"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="40dp" />
+
+                <ListView
+                    android:layout_width="350dp"
+                    android:layout_below="@+id/textView14"
+                    android:background="@color/gray4"
+                    android:id="@+id/listed"
+                    android:layout_height="250dp" />
+
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>
